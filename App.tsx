@@ -9,6 +9,9 @@ import {
 
 
 import { SignIn } from "./src/screens/Signin";
+import { New } from "./src/screens/New";
+import { Find } from "./src/screens/Find";
+import { Pools } from "./src/screens/Pools";
 import { Loading } from "./src/components/Loading";
 
 import { THEME } from "./src/styles/Themes";
@@ -28,7 +31,7 @@ export default function App() {
 					backgroundColor="transparent"
 					translucent
 				/>
-				{fontsLoad ? <SignIn /> : <Loading />}
+				{fontsLoad ? <Pools /> : <Loading />}
 			</AuthContextProvider>
 		</NativeBaseProvider>
 	);
