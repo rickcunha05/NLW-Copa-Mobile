@@ -14,7 +14,7 @@ export function Button({ title, type = "PRIMARY", ...rest }: Props) {
       textTransform="uppercase"
       bgColor={type === "SECONDARY" ? 'red.500' : 'yellow.500'}
       _pressed={{
-        bg: type === "SECONDARY" ? 'red.700' : 'yellow.700'
+        bg: type === "SECONDARY" ? 'red.700' : 'yellow.600'
       }}
       _loading={{
         _spinner: { color: 'white' }

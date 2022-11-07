@@ -8,10 +8,7 @@ import {
 } from "@expo-google-fonts/roboto";
 
 
-import { SignIn } from "./src/screens/Signin";
-import { New } from "./src/screens/New";
-import { Find } from "./src/screens/Find";
-import { Pools } from "./src/screens/Pools";
+import { Routes } from "./src/routes";
 import { Loading } from "./src/components/Loading";
 
 import { THEME } from "./src/styles/Themes";
@@ -31,7 +28,7 @@ export default function App() {
 					backgroundColor="transparent"
 					translucent
 				/>
-				{fontsLoad ? <Pools /> : <Loading />}
+				{fontsLoad ? <Routes /> : <Loading />}
 			</AuthContextProvider>
 		</NativeBaseProvider>
 	);
